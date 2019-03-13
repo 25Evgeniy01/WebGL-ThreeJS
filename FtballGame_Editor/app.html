@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+
+    <link type="text/css" rel="stylesheet" href="appTest.css"/>
+    <script type="text/javascript" src="direct/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+
+
+<div class="buttonMain" id='leftBut'></div>
+<div class="buttonMain" id='ball'></div>
+<div class="buttonMain" id='rightBut'></div>
+
+<div class="buttonMain" id="dribbling">
+</div>
+<!--1-->
+<div class="buttonMain" id="run">
+</div>
+
+<div class="buttonMain" id='pass'>
+</div>
+<!--1-->
+<div class="buttonMain" id='getPass'>
+</div>
+
+<div class="buttonMain" id='passOver'>
+</div>
+<!--1-->
+<div class="buttonMain" id='getPassAndShot'>
+</div>
+
+<div class="buttonMain" id='shot'>
+</div>
+<!--1-->
+
+<div class="buttonMain" id='stopWithoutBall'>
+</div>
+
+<div class="buttonMain" id='stop'>
+</div>
+
+<div class="buttonMain" id='replace'>
+</div>
+
+<div class="buttonMain" id='statusBarVisible'>
+</div>
+
+<div class="buttonMain">
+    <div class="buttonMainFirst"></div>
+<div class="buttonMainSecond" id='start' ></div>
+</div>
+<div class="buttonMain">
+    <div class="buttonMainFirst"></div>
+    <div class="buttonMainSecond" id='rechangeScheme'></div>
+</div>
+
+<div class="firstTeam">
+    <div id="firstGoal">
+
+        <div id="firstCircle"><div id="secondCircle"><div id="thirdCircle"></div></div></div>
+
+    </div>
+    <div id="firstTeam">
+Barcelona
+    </div>
+    <div id="firstFlag">
+        <span class="goalTable">1</span>
+    </div>
+</div>
+<div class="secondTeam">
+    <div id="secondGoal">
+        <div id="firstCircle1"><div id="secondCircle1"><div id="thirdCircle1"></div></div></div>
+
+    </div>
+    <div id="secondTeam">
+Real Madrid
+    </div>
+    <div id="secondFlag">
+<span class="goalTable">1</span>
+    </div>
+</div>
+
+<div class="circle" id="circles-1"></div>
+
+<div id="wait"> </div>
+<div id="finish"> </div>
+
+<canvas id="canvas"> </canvas>
+<!--direct-->
+<script src="direct/ammo.js"></script>
+
+<script src="direct/three.min.js"></script>
+<script src="direct/OBJLoader.js"></script>
+<script src="direct/OrbitControls.js"></script>
+<script src="direct/Projector.js"></script>
+<script src="direct/stats.min.js"></script>
+<script src="direct/Detector.js"></script>
+<script src="direct/MTLLoader.js"></script>
+<script src="direct/THREEx.WindowResize.js"></script>
+<script src="direct/JDLoader.min.js"></script>
+<script src="node_modules/socket.io-client/dist/socket.io.js"></script>
+
+<!--<script src="direct/physijs/physi.js"></script>-->
+<!--End direct-->
+<script src="app/variables.js"></script>
+<!-- Settings for the game in the beginning -->
+<script src="app/startGameSettings/startGame.js"></script>
+<script src="app/startGameSettings/playerGame.js"></script>
+<script src="app/startGameSettings/serverListener.js"></script>
+<!-- Player functionality in game -->
+<script src="app/playerFunction/click.js"></script>
+<script src="app/playerFunction/dribbling.js"></script>
+<script src="app/playerFunction/pass.js"></script>
+<script src="app/playerFunction/shot.js"></script>
+<script src="app/playerFunction/stop.js"></script>
+<script src="app/playerFunction/bend.js"></script>
+<!--Model-->
+<script src="app/model/field.js"></script>
+<script src="app/model/player.js"></script>
+<script src="app/model/ball.js"></script>
+<!--End Model-->
+<!-- interface -->
+<script src="app/interface/interface.js"></script>
+<script src="app/interface/interfaceBall.js"></script>
+<!--End interface-->
+<!-- Event -->
+<script src="app/event.js"></script>
+<!-- End Event-->
+<script src="app/app.js"></script>
+<!-- Physics -->
+<script src="app/physic/physic.js"></script>
+<script type="text/javascript"> //запрет на контекстное меню в браузере при правом клике
+    document.oncontextmenu = function (){return false};
+</script>
+<!-- circle JS -->
+<script src="direct/circle.js"></script>
+<script>
+
+        var child = document.getElementById('circles-1'),
+            percentage = 90 ;
+
+        var circles= (Circles.create({
+            id:         child.id,
+            value:		percentage,
+            radius:     45,
+            width:      10,
+            colors:     ['#152100', '#ffff00']
+
+        }));
+</script>
+
+</body>
+</html>

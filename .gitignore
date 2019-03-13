@@ -3,3 +3,13 @@
 /ThreeJSGTA/.idea/
 /GraphCalc/node_modules/
 /GraphCalc/.idea/
+
+#folder logs
+/FtballGame_Editor/node_modules/
+/FtballGame_Editor/pageloader/
+/FtballGame_Editor/direct/
+/FtballGame_Editor/models/
+/FtballGame_Editor/appTshirt/models/
+
+# txt-files
+/FtballGame_Editor/*.txt

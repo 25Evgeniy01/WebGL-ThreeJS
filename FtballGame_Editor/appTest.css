@@ -1,0 +1,383 @@
+body, html {
+    margin: 0px;
+    overflow: hidden;
+}
+
+.buttonMainSecond {
+    position:absolute;
+    left:60px;
+}
+
+#wait {
+    position:absolute;
+    background-color: rgba(0,0,0,0.8);
+    border-radius:solid 2px white;
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+}
+
+#finish {
+    position:absolute;
+    background-color: rgba(0,0,0,0.5);
+    border-radius:solid 2px white;
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+}
+
+.buttonSelect, .buttonSelectFirstLeft, .buttonSelectFirstRight, .buttonSelectRight {
+    position:absolute;
+}
+.buttonBall {
+    position:absolute;
+}
+
+.buttonMainFirst {
+    position:absolute;
+    left:36px;
+}
+
+.buttonMainFirst input {
+    height: 40px;
+    width: 25px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    background-color: rgba(21,33,0,0.3);
+    border: solid 2px white;
+    color: white;
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.buttonMainSecond input {
+    height: 40px;
+    width: 130px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: rgba(21,33,0,0.3);
+    border: solid 2px white;
+    color: white;
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 16.5px;
+}
+
+ #leftBut {
+     position: absolute;
+     left: 4px;
+ }
+.buttonSelectFirstRight input, .buttonSelectFirstLeft input  {
+    height: 45px;
+    width: 23.5px;
+    border-bottom-left-radius: 55px;
+    border-top-left-radius: 55px;
+    background-color: rgba(21,33,0,0.3);
+    border: solid 2px white;
+    color: white;
+    font-weight: 700;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+.buttonSelectFirstLeft input {
+    background: url("app/interface/img/s_left.png") 80% 80% no-repeat;
+    background-color: rgba(21,33,0,0.3);
+    background-position-y: 13px;
+}
+
+.buttonSelectRight input {
+    background: url("app/interface/img/s_right.png") 80% 80% no-repeat;
+    background-color: rgba(21,33,0,0.3);
+    background-position-y: 13px;
+}
+
+.buttonSelect input, .buttonSelectRight input {
+    height: 45px;
+    width: 23.5px;
+    border-bottom-right-radius: 55px;
+    border-top-right-radius: 55px;
+    background-color: rgba(21,33,0,0.3);
+    border: solid 2px white;
+    color: white;
+    font-weight: 700;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+.buttonBall input {
+    height: 45px;
+    width: 43px;
+    border-radius: 25px;
+   background-image: url("app/interface/img/ball1.png");
+    background-color: rgba(21,33,0,0.3);
+    background-size: cover;
+   /* border: solid 2px white;*/
+    color: white;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+.buttonMain:hover {
+    opacity: 0.7;
+    background-color: #cce0ff;
+}
+
+.buttonMain {
+    background-color: rgba(21,33,0,0.3);
+}
+
+.firstTeam {
+    position: absolute;
+    left: 1732px;
+    top:33px;
+}
+.secondTeam {
+    position: absolute;
+    left: 1732px;
+    top:83px;
+}
+#firstGoal, #secondGoal {
+    height: 32px;
+    width: 27.5px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background-color: rgba(21,33,0,0.3);
+    border-left: solid 2px white;
+    border-top: solid 2px white;
+    border-bottom: solid 2px white;
+    color: white;
+    font-weight: 700;
+    font-family: Arial;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-left: 10px;
+}
+#firstTeam, #secondTeam {
+    margin-left: 40px;
+    margin-top: -44px;
+    height: 30px;
+    width: 109px;
+    background-color: rgba(21,33,0,0.3);
+    border-top: solid 2px white;
+    border-bottom: solid 2px white;
+    border-right: solid 2px white;
+    color: white;
+    font-weight: 700;
+    font-family: Arial;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#firstCircle {
+    height: 41px;
+    width: 41px;
+    border-radius: 40px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-weight: 700;
+    font-family: Arial;
+    font-size: 18px;
+    right: 160.3px;
+    top: 1px;
+    position: absolute;
+}
+#secondCircle {
+    height: 30px;
+    width: 30px;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    font-weight: 700;
+    font-family: Arial;
+    font-size: 18px;
+    right: 5px;
+    top: 5px;
+    position: absolute;
+}
+#thirdCircle {
+    height: 15px;
+    width: 15px;
+    border-radius: 40px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-weight: 700;
+    font-family: Arial;
+    font-size: 18px;
+    right: 8px;
+    top: 8px;
+    position: absolute;
+}
+
+#firstCircle1 {
+    height: 41px;
+    width: 41px;
+    border-radius: 40px;
+    background-color: rgb(137, 135, 255);
+    color: white;
+    font-weight: 700;
+    font-family: Arial;
+    font-size: 18px;
+    right: 160.3px;
+    top: 1.7px;
+    position: absolute;
+}
+#secondCircle1 {
+    height: 31px;
+    width: 31px;
+    border-radius: 40px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-weight: 700;
+    font-family: Arial;
+    font-size: 18px;
+    right: 5px;
+    top: 5px;
+    position: absolute;
+}
+#thirdCircle1 {
+    height: 15px;
+    width: 15px;
+    border-radius: 40px;
+    background-color: rgb(137, 135, 255);
+    color: white;
+    font-weight: 700;
+    font-family: Arial;
+    font-size: 18px;
+    right: 8px;
+    top: 8px;
+    position: absolute;
+}
+#firstFlag, #secondFlag {
+    margin-left: 159px;
+    margin-top: -44px;
+    height: 44px;
+    width: 45px;
+    background-size: cover;
+    color: white;
+    font-weight: 700;
+    font-family: Arial;
+    font-size: 14px;
+}
+#firstFlag {
+    background-image: url("app/interface/img/ln.png");
+}
+#secondFlag {
+    background-image: url("app/interface/img/lv.png");
+}
+
+
+.circle {
+    position: absolute;
+    left: 1922px;
+    top:32px;
+    color: white;
+    border: 3px solid white;
+    border-radius: 100px;
+    height: 90px;
+    background-color: rgba(21,33,0,0.3);
+    font-size: 10px;
+}
+
+.goalTable {
+    margin-top: 9px;
+    margin-left: 6px;
+    position: absolute;
+    color: white;
+    font-weight: 700;
+    font-family: Arial;
+    font-size: 22px;
+}
+#start {
+    top:20px;
+    left:1000px;
+}
+#rechangeScheme {
+    top:950px;
+    left:1000px;
+}
+
+@media screen and (max-width: 2020px) {
+    .firstTeam {
+        left: 1532px;
+    }   
+    .secondTeam {
+        left: 1532px;
+    }
+    .circle {
+        left: 1722px;
+    }
+}
+@media screen and (max-width: 1830px) {
+    .firstTeam {
+        left: 1332px;
+    }   
+    .secondTeam {
+        left: 1332px;
+    }
+    .circle {
+        left: 1522px;
+    }
+    #start {
+        left:800px;
+    }
+    #rechangeScheme { 
+        left: 800px;
+    }
+}
+@media screen and (max-width: 1630px) {
+    .firstTeam {
+        left: 1132px;
+    }   
+    .secondTeam {
+        left: 1132px;
+    }
+    .circle {
+        left: 1322px;
+    }
+    #start {
+        left:600px;
+    }
+    #rechangeScheme { 
+        left: 600px;
+    }
+}
+@media screen and (max-width: 1420px) {
+    .firstTeam {
+        left: 932px;
+    }   
+    .secondTeam {
+        left: 932px;
+    }
+    .circle {
+        left: 1122px;
+    }
+    #start {
+        left:500px;
+    }
+    #rechangeScheme { 
+        left: 500px;
+    }
+}
+@media screen and (max-width: 1220px) {
+    .firstTeam {
+        left: 732px;
+    }   
+    .secondTeam {
+        left: 732px;
+    }
+    .circle {
+        left: 922px;
+    }
+    #start {
+        left:400px;
+    }
+    #rechangeScheme { 
+        left: 400px;
+    }
+}
+

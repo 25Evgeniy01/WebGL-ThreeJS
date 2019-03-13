@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Ball</title>
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link type="text/css" rel="stylesheet" href="teamBall.css">
+    <script type="text/javascript" src="direct/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div class="row marg">
+    <div class="col-md-12">
+        <form role="form" class="form-horizontal">
+            <div class="col-md-3"></div>
+            <a href="app.html">
+                <input type="button" class="col-md-2 btn-lg btn-primary" id="withBall" value="C мячем">
+            </a>
+            <div class="col-md-2"></div>
+            <a href="app.html">
+            <input type="button" class="col-md-2 btn-lg btn-danger" id="withoutBall" value="Без мяча">
+            </a>
+            <div class="col-md-3"></div>
+        </form>
+    </div>
+</div>
+<script>
+    var teamBallBoolean;
+    document.getElementById('withBall').addEventListener('click', function(){
+        teamBallBoolean = true;
+        $.ajax({
+            type: "POST",
+            url: 'test.php',
+            data: {'data': JSON.stringify(
+                teamBallBoolean
+            ),
+            },
+            success: function(data) {
+                console.log(data);
+            },
+            error: function(data) {
+                console.log('error');
+            }
+        });
+    });
+    document.getElementById('withoutBall').addEventListener('click', function () {
+        teamBallBoolean = false;
+        $.ajax({
+            type: "POST",
+            url: 'test.php',
+            data: {'data': JSON.stringify(
+                teamBallBoolean
+            ),
+            },
+            success: function(data) {
+                console.log(data);
+            },
+            error: function(data) {
+                console.log('error');
+            }
+        });
+    });
+</script>
+</body>
+</html>

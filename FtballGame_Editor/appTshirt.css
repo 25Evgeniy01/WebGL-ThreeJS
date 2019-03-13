@@ -1,0 +1,215 @@
+body, html {
+    margin: 0px;
+    overflow: hidden;
+}
+
+#saveButton {
+    position: absolute;
+    top: 20px;
+    left: 1500px;
+}
+#saveButton input {
+    border: solid white 3px;
+    border-radius: 10px;
+    padding: 13px;
+}
+
+#buttonRotationPlayerSecondLeft input {
+    top: 570px;
+    left: 80px;
+}
+
+#buttonRotationPlayerSecondRight input {
+    top: 570px;
+    left: 180px;
+}
+
+#buttonRotationPlayerSecondLeft input, #buttonRotationPlayerSecondRight input {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    border-radius: 55px;
+    background-color: rgba(21,33,0,0.3);
+    border: solid 2px white;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#buttonRotationPlayerFirstLeft input, #buttonRotationPlayerFirstRight input{
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    border-radius: 55px;
+    background-color: rgba(21,33,0,0.3);
+    border: solid 2px white;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+}
+#buttonRotationPlayerFirstLeft input {
+    top: 570px;
+    left: 80px;
+}
+#buttonRotationPlayerFirstRight input {
+    top: 570px;
+    left: 180px;
+}
+#firstButtonRotation {
+    position: absolute;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin-top: 260px;
+    margin-left: 630px;
+    height: 650px;
+    width: 300px;
+}
+#secondButtonRotation {
+    position: absolute;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin-top: 260px;
+    margin-left: 1100px;
+    height: 650px;
+    width: 300px;
+}
+.color input {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    border: solid 2px white;
+    left: 30px;
+}
+
+.color span {
+    position: absolute;
+    left: 10px;
+    top: 70px;
+    font-size: large;
+    color: white;
+}
+#firstColor, #firstColorS, #secondColor, #secondColorS, #thirdColor, #thirdColorS, #fourthColor, #fourthColorS, #fivesColor, #fivesColorS, #sixColor, #sixColorS, #sevenColor, #sevenColorS, #eightColor, #eightColorS, #nineColor, #nineColorS, #tenColor, #tenColorS, #elevenColor, #elevenColorS, #twelweColor, #twelweColorS, #thirteenColor, #thirteenColorS {
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+#firstColor, #firstColorS {
+    background-color: rgba(8, 155, 0, 1);
+    top: 100px;
+}
+#secondColor, #secondColorS {
+    background-color: rgba(255, 255, 255, 1);
+    top: 150px;
+}
+#thirdColor, #thirdColorS {
+    background-color: rgba(0, 0, 0, 1);
+    top: 200px;
+ }
+#fourthColor, #fourthColorS {
+    background-color: rgba(105, 0, 255, 1);
+    top: 250px;
+}
+#fivesColor, #fivesColorS {
+    background-color: rgba(0, 37, 255, 1);
+    top: 300px;
+}
+#sixColor, #sixColorS {
+    background-color: rgba(0, 195, 255, 1);
+    top: 350px;
+}
+#sevenColor, #sevenColorS {
+    background-color: rgba(252, 252, 0, 1);
+    top: 400px;
+}
+#eightColor, #eightColorS {
+    background-color: rgba(226, 91, 0, 1);
+    top: 450px;
+}
+#nineColor, #nineColorS {
+    background-color: rgba(221, 194, 186, 1);
+    top: 500px;
+}
+#tenColor, #tenColorS {
+    background-color: rgba(255, 166, 202, 1);
+    top: 550px;
+}
+#elevenColor, #elevenColorS {
+    background-color: rgba(232, 0, 0, 1 );
+    top: 600px;
+}
+#twelweColor, #twelweColorS {
+    background-color: rgba(90, 4, 13, 1);
+    top: 650px;
+}
+#thirteenColor, #thirteenColorS {
+    background-color: rgba(79, 46, 31, 1);
+    top: 700px;
+}
+.colorSecondLine input {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    border: solid 2px white;
+    left: 150px;
+}
+.colorSecondLine span {
+    position: absolute;
+    left: 105px;
+    top: 70px;
+    font-size: large;
+    color: white;
+}
+
+#t-shirt, #shorts, #getrs {
+    position: absolute;
+    border: 3px solid white;
+    border-radius: 10px;
+    height: 150px;
+    width: 250px;
+    left: 1600px;
+    top: 300px;
+}
+#shorts {
+    top: 500px;
+}
+#shorts input, #t-shirt input, #getrs input {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 130px;
+}
+#getrs {
+    top: 700px;
+}
+
+#tshirtLeft, #tshirtRight, #shortsLeft, #shortsRight, #getrsLeft, #getrsRight {
+    background-color: inherit;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+#tshirtLeft:hover, #tshirtRight:hover, #shortsLeft:hover, #shortsRight:hover, #getrsLeft:hover, #getrsRight:hover {
+    background-color: green;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+#tshirt {
+    position: absolute;
+    left: 70px;
+    top: 20px;
+}
+
+#short {
+    position: absolute;
+    left: 70px;
+    top: 20px;
+}
+
+#getr {
+    position: absolute;
+    left: 70px;
+    top: 20px;
+}
