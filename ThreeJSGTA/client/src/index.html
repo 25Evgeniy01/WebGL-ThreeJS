@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Created by zhenyaBugera</title>
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+                <div id="navi">
+                </div>
+                <div id="infoi">
+                    <div id="panel">
+                        <div class="row" style="padding-top: 30px">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class="col-md-1">
+                                    </div>
+                                    <div class="col-md-6">
+                                        Mass car
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <button class="btn" id="btnDown"><</button>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <span id="labelSpeed">0</span>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button class="btn" id="btnUp">></button>
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-2">
+                                        <a href="/">
+                                            <button type="button" class="btn btn-success" style="padding-left: 40px; padding-right: 40px; font-weight: bold;">Restart</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        Garage light
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input id="garagelight" type="checkbox">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <p class="slide"><a href="#" class="btnSlide">Settings</a></p>
+                </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="blind" style="background-color: black; padding-top: 0%">
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!--config-->
+<script src="lib/three.min.js"></script>
+<script src="lib/OrbitControls.js"></script>
+<script src="lib/stats.min.js"></script>
+<script src="lib/Detector.js"></script>
+<script src="lib/THREEx.WindowResize.js"></script>
+
+<!--effect-->
+<script src="lib/blur/EffectComposer.js"></script>
+<script src="lib/blur/ShaderPass.js"></script>
+<script src="lib/blur/RenderPass.js"></script>
+<script src="lib/blur/CopyShader.js"></script>
+
+<script src="lib/blur/SepiaShader.js"></script>
+<script src="lib/blur/DigitalGlitch.js"></script>
+<script src="lib/blur/GlitchPass.js"></script>
+<!--end config-->
+
+<script src="./js/bundle.js"></script>
+</body>
+</html>
